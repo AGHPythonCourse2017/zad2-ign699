@@ -70,6 +70,3 @@ class Complexity:
         print(p(time))
 
 
-comp = Complexity("/home/jasiek/PycharmProjects/forTesting/code", "/home/jasiek/PycharmProjects/forTesting/setup")
-comp.complexityClass()
-comp.dataInTime(0.7)
