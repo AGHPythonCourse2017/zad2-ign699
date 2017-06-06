@@ -7,12 +7,12 @@ class TimeoutException(Exception):  # Custom exception class
 
 
 class Complexity:
-    def createLogger(self):
-        logger = logging.getLogger("logger")
-        logger.setLevel(logging.INFO)
-        handle = logging.FileHandler("forTesting/test.log")
-        logger.addHandler(handle)
-        return logger
+    #def createLogger(self):
+    #   logger = logging.getLogger("logger")
+    #    logger.setLevel(logging.INFO)
+    #    handle = logging.FileHandler("forTesting/test.log")
+    #    logger.addHandler(handle)
+    #    return logger
 
 
     def __init__(self, code, setup):
@@ -32,7 +32,7 @@ class Complexity:
         global x
         x = 10000
         final = 0
-        logger = self.createLogger()
+        #logger = self.createLogger()
         signal.alarm(30)
         try:
             for i in range(7):
